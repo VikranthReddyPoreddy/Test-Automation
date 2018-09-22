@@ -50,6 +50,12 @@ public class StepDefination {
 	public void user_enter_text_into_textBox(String objectProperty, String textBoxValue) throws Throwable {
 		UIManager.getInstace().enterValueIntoTextBox(objectProperty, textBoxValue);
 	}
+        @Given("^user add \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_addx(int a, int b) throws Throwable {
+		System.out.println(a+b);
+	}
+
+
 
 	@Given("^user click on \"([^\"]*)\"$")
 	public void user_click_on(String objectProperty) throws Throwable {
